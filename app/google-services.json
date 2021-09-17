@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "255135424284",
+    "project_id": "chattku-3592b",
+    "storage_bucket": "chattku-3592b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255135424284:android:be91065fe2927a2b6a64d9",
+        "android_client_info": {
+          "package_name": "com.example.chatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255135424284-9h6sfqtplk449bj47v56j246dpc50744.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW1prxb6bjGurCxxrK041yKKC8boOIC1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255135424284-9h6sfqtplk449bj47v56j246dpc50744.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
