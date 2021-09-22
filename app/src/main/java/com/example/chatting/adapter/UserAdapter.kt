@@ -1,13 +1,16 @@
 package com.example.chatting.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.chatting.R
+import com.example.chatting.activity.ChatActivity
 import com.example.chatting.model.User
 import de.hdodenhof.circleimageview.CircleImageView
 import java.util.ArrayList
@@ -26,6 +29,12 @@ class UserAdapter (private  val context: Context , private val userList:ArrayLis
         holder.txtUserName.text = user.userName
         Glide.with(context).load(user.profileImage).placeholder(R.drawable.hantu).into(holder.imgUser)
 
+        holder.layoutUser.setOnClickListener{
+            val intent = Intent(context,ChatActivity::class.java)
+            intent.putExtra("userId" , user.userId)
+            context.startActivity(intent)
+
+        }
     }
 
     override fun getItemCount(): Int {
@@ -37,6 +46,7 @@ class UserAdapter (private  val context: Context , private val userList:ArrayLis
         val txtUserName:TextView = view.findViewById(R.id.userName)
         val txttemp:TextView = view.findViewById(R.id.temp)
         val imgUser:CircleImageView = view.findViewById(R.id.userImage)
+        val layoutUser:LinearLayout = view.findViewById(R.id.layoutuser)
 
     }
 }
